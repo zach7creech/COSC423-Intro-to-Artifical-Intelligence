@@ -1,0 +1,18 @@
+This program contains definitions for four functions. These four functions evaluate applicants
+based on their GPAs in their 5 CS courses and their non-CS GPA. A list of applicants' GPAs are
+read from a .csv file 'applicants.csv', processed through each of the four functions, and if
+the applicant passes all four functions (each returns True), the applicant's resume is passed
+on to HR. If not, the applicant is rejected. The results are written to a .csv file
+'results.csv', with each line corresponding to each line from applicants.csv, 'ACCEPT' if 
+accepted and 'REJECT' if rejected.
+
+To run this code locally in a Unix environment, place 'main.py' in the same directory as a file
+of applicants called 'applicants.csv'. In a terminal, within that directory, run the following
+command: 'python3 main.py' to run the code and output the results to a file called 'results.csv'
+in the same directory.
+
+Ethical Statement: If Moogle wishes to vet its applicants in such an abitrary manner, then that
+is their perogative. The algorithm is ethical in the sense that it bases an applicant's worth
+solely on merit (albeit a very small subspace of what could be considered 'merit'). I do not
+believe that this algorithm necessarily violates any hiring laws in the U.S., but I do not believe
+that this is a useful way to choose potential employees.

@@ -1,0 +1,18 @@
+This file 'main.py' contains the implementation for class PathPlanner as well as
+the driving code in main() to accept command line arguments to utilize the class.
+The class contains 3 search functions, two uninformed BFS and DFS, and one informed
+A* that utlizes Euclidean distance as its heuristic. It also contains two helper
+functions, inBounds to determine if a node has already been visited, is outside the
+grid, or is a 'wall' (a 1), and printPath that will print the path returned by each
+of the search functions. This file also contains implementation for class Node that
+each traversed pair of indices is stored as. Contains a node's i,j coordinates and
+a pointer to its parent, which is helpful for printing the final path.
+
+To run this code locally in a Unix environment, place 'main.py' in the same directory
+as a file that contains a NxM grid composed entirely of 0s, 1s, and commas separating
+each entry. In a terminal, within that directory, run the following command:
+'python3 main.py --input FILENAME --start START_NODE --goal GOAL_NODE --search SEARCH_TYPE'
+where SEARCH_TYPE can be BFS, DFS, astar, or ALL to run the respective search.
+Ordering of the commands is very important, as the program will not run otherwise. Output
+will be printed to the terminal.
+
